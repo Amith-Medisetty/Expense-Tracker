@@ -1,0 +1,471 @@
+/* Make sure the body takes full height of the screen */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+html, body {
+  height: 100%; /* Set height to 100% of the viewport */
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Adjust the container to occupy full screen height */
+.home-container {
+  width: 100vw;
+  height: 100vh; /* Make the container take the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Update the main content to center the page properly */
+.home-page {
+  background: linear-gradient(to right, #2980b9, #6dd5fa);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  height: 100%; /* Ensure this section fills the screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+}
+
+/* If needed, update other sections to fill space appropriately */
+.container {
+  background: #413f3f;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  margin: auto; /* Center the container */
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} 
+/* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+body {
+  background: #4a4a4b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container Styles */
+.container {
+  background: #413f3f;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Label Styles */
+label {
+  font-size: 14px;
+  color: #7f8c8d;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+/* Input Styles */
+input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #3498db;
+}
+
+/* Button Styles */
+button {
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #21618c;
+  transform: translateY(0);
+}
+
+/* Link Styles */
+.link {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.link a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* Card Styles */
+.card {
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Home Page Styling */
+.home-page {
+  background: linear-gradient(to right, #2980b9, #6dd5fa);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.home-page h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.home-page p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.home-page a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  background-color: #3498db;
+  padding: 12px 25px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.home-page a:hover {
+  background-color: #2980b9;
+}
+
+/* Animation for form fields */
+input, button {
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+input:nth-child(1), button:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+input:nth-child(2), button:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .home-page h1 {
+    font-size: 35px;
+  }
+
+  .home-page p {
+    font-size: 16px;
+  }
+
+  .home-page a {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Styles */
+body {
+  background: #f1f3f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Homepage Container */
+.home-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #2c3e50;
+  color: white;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.login-button {
+  background-color: #f39c12;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #e67e22;
+}
+
+/* Intro Section */
+.intro-section {
+  text-align: center;
+  background: linear-gradient(120deg, #2980b9, #85f387);
+  color: white;
+  padding: 80px 20px;
+  height: 300px;
+}
+
+.intro-section h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.intro-section p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.cta-button {
+  background-color: #f39c12;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 40px;
+}
+
+.cta-button:hover {
+  background-color: #e67e22;
+}
+
+/* Feature Boxes */
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  height: 700px;
+}
+
+.feature-box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 45%;
+  text-align: center;
+}
+
+.feature-box h3 {
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+.feature-box p {
+  font-size: 20px;
+  color: #7f8c8d;
+  margin-top: 30px;
+}
+
+.feature-button {
+  background-color: #3498db;
+  color: white;
+  width: 450px;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 80px;
+}
+
+.feature-button:hover {
+  background-color: #2980b9;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-box {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .intro-section h1 {
+    font-size: 28px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+  }
+}
+
+
+
+.currency-converter {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.currency-converter h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.currency-converter .form-group {
+  margin-bottom: 15px;
+}
+
+.currency-converter label {
+  display: block;
+  font-weight: bold;
+}
+
+.currency-converter input,
+.currency-converter select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.currency-converter button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.currency-converter button:hover {
+  background-color: #2980b9;
+}
+
+.currency-converter .result {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* 
+.financial-management-container{
+  height: 100%;
+  width: 100%;
+} */
+
+

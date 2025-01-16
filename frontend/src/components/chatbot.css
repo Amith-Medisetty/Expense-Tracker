@@ -1,0 +1,133 @@
+/* chatbot.css */
+
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #2f2f2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background-position-x:left;
+}
+
+
+/* body {
+  background-color: #f4f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  background-image: url("https://tse4.mm.bing.net/th?id=OIP.0FsSfPFJo25tvZJjpWs-hQHaDt&pid=Api&P=0&h=180");
+  background-position: left center; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+} */
+
+
+.chat-container {
+  background-color: #464545;
+  border-radius: 10px;
+  width: 200%;
+  max-width: 800px;
+  height: 90vh; /* Make the chat container occupy the full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(248, 247, 247, 0.927);
+  overflow: hidden;
+}
+
+.chat-box {
+  padding: 20px;
+  overflow-y: auto;
+  flex-grow: 1; /* Makes the chat box expand to take available space */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.message {
+  max-width: 80%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.bot {
+  background-color: #3f3e3e;
+  color: #f9f6f6;
+  align-self: flex-start;
+  border: 1px solid #ddd;
+}
+
+.user {
+  background-color: #3a86ff;
+  color: #fff;
+  align-self: flex-end;
+  border: 1px solid #2c6bbf;
+}
+
+.thinking {
+  color: #bb672e;
+  font-style: italic;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  height: 150px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #100f0f;
+  color: white;
+  background-color: #0f0e0e;
+  margin-bottom: 10px;
+  height: 80px;
+  resize: none;
+  transition: border 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3a86ff;
+}
+
+.send-btn {
+  background-color: #14914c;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0px;
+}
+
+.send-btn:disabled {
+  background-color: #c2c2c2;
+  cursor: not-allowed;
+}
+
+.send-btn:not(:disabled):hover {
+  background-color: #15723a;
+}
