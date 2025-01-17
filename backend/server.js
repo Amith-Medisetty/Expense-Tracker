@@ -91,7 +91,7 @@ app.delete('/financialRecords/:id', async (req, res) => {
 
 // MongoDB connection
 mongoose
-  .connect("mongodb+srv://amithmedisetty:amith2004@cluster0.av8rngi.mongodb.net/practice_financialDB?retryWrites=true&w=majority&appName=Cluster0")
+  .connect("")
   .then(() => {
     app.listen(4000, () => {
       console.log("Listening on port 4000 and connected to DB");

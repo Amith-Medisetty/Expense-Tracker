@@ -11,8 +11,7 @@ const CurrencyConverter = () => {
   const [error, setError] = useState(null);
 
   // Replace with your actual API key from ExchangeRate-API
-  const API_KEY = 'bb98041ed56957279be2eb0b';
-  const API_URL = `https://v6.exchangerate-api.com/v6/${API_KEY}/latest/USD`;  // Base currency is USD
+  // Base currency is USD
 
   // Fetch exchange rates when component loads
   useEffect(() => {
