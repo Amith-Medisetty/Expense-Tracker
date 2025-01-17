@@ -37,7 +37,7 @@ function Chatbot() {
         "You are an expert in financial management. Answer questions only related to finance, money, investment, budget, expenses, revenue, profit, economy, or accounting. If a question is unrelated, respond with 'Sorry, I can only answer financial management-related questions.'";
 
       const response = await axios({
-        url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyCchGsjVmpTrQ3PZ0mykKLT8xzB6wMHVXE",
+        url: "",
         method: "post",
         data: {
           contents: [{ parts: [{ text: `${instruction} ${currentQuestion}` }] }],
